@@ -1,0 +1,12 @@
+[package]
+name = "nes_book_emu"
+version = "0.1.0"
+authors = ["bugzmanov <bugzmanov@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.4.0"
+bitflags = "1.2.1"
+
+rand = "=0.7.3"
+sdl2 = "0.37"
