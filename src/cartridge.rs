@@ -3,6 +3,7 @@ const PRG_ROM_PAGE_SIZE: usize = 16384;
 const CHR_ROM_PAGE_SIZE: usize = 8192;
 
 #[derive(Debug, PartialEq)]
+#[allow(non_camel_case_types)]
 pub enum Mirroring {
    VERTICAL,
    HORIZONTAL,
@@ -84,7 +85,11 @@ pub mod test {
         result
     }
 
-    pub fn test_rom(program: Vec<u8>) -> Rom {
+    pub fn test_rom() -> Rom {
+        test_rom_containing(vec![])
+    }
+
+    pub fn test_rom_containing(program: Vec<u8>) -> Rom {
         let mut pgp_rom_contents = program;
         pgp_rom_contents.resize(2 * PRG_ROM_PAGE_SIZE, 0);
 
