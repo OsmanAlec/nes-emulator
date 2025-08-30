@@ -12,3 +12,5 @@ I would recommend pacman.
 
 This emulator currently supports NES 1.0 (mapper 0 / NROM) games.
 Some homebrew or advanced mapper games may not run correctly.
+Can find homebrew games here:
+https://www.nesworld.com/article.php?system=nes&data=neshomebrew
